@@ -1,0 +1,10 @@
+services:
+  app:
+    build: . 
+    container_name: my_app
+    ports: 
+      - "5000:5000"
+    volumes:
+      - \(CE)\AWS practice\github-actions
+    environment:
+      - ENV=development
